@@ -65,7 +65,12 @@ Answer as helpfully and concisely as possible, maintaining conversational tone.
 
         # Step 3: Generate response
         response = self.client.models.generate_content(
+<<<<<<< HEAD
             model="gemini-2.5-pro", contents=full_prompt
+=======
+            model="models/gemini-2.0-flash",  # Stable, good performance
+            contents=full_prompt
+>>>>>>> d3f36b6 (update file)
         )
         answer = getattr(response, "text", "No answer generated.").strip()
 
@@ -74,4 +79,8 @@ Answer as helpfully and concisely as possible, maintaining conversational tone.
         self.history.append({"role": "assistant", "content": answer})
 
         print(f"Assistant: {answer[:200]}...")
+<<<<<<< HEAD
         return answer
+=======
+        return answer
+>>>>>>> d3f36b6 (update file)
