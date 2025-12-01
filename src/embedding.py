@@ -35,4 +35,8 @@ def get_embedding_dimension(model: SentenceTransformer) -> int:
     """
     Return the dimensionality of the embedding vectors.
     """
+<<<<<<< HEAD
     return model.get_sentence_embedding_dimension()
+=======
+    return model.get_sentence_embedding_dimension()
+>>>>>>> d3f36b6 (update file)
